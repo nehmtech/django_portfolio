@@ -1,0 +1,295 @@
+ @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+ /* Global styling */
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+ 
+
+ :root{
+    --main: #900C3F;
+    --primary: #C70039;
+    --seconday: #F94C10;
+    --backgounds: #F8DE22;
+    --white: #fff;
+    --cyan: cyan;
+ }
+
+ 
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* Main Styling */
+
+.main-container{
+    background: url(media/bg.jpg) no-repeat;
+    height: 100vh;
+}
+
+.columms{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 25% 75%;
+    gap: 20px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.left{
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+}
+
+.left .navlinks ul li a{
+    font-size: 30px;
+    color: var(--backgounds);
+    padding: 10px;
+    text-decoration: none;
+}
+.left .navlinks ul li {
+    padding: 10px;
+}
+ .logo{
+    font-size: 20px;
+    color: var(--white);
+}
+ .logo span{
+    
+    color: var(--backgounds);
+}
+
+.footer{
+    color: var(--white);
+}
+
+
+
+.photo img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 150px;
+    
+}
+
+.avator {
+    text-align: center;
+    padding: 20px;
+
+}
+.avator .text-typing{
+    color: var(--white);
+    padding: 15px;
+
+}
+
+.avator .icons{
+    color: var(--backgounds);
+
+}
+.avator .icons i{
+    font-size: 30px;
+}
+
+button{
+    border: 1px solid var(--seconday);
+    background-color: var(--main);
+    color: var(--white);
+    padding: 5px 10px;
+    margin: 40px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all -3s ease-in-out;
+    margin: 20px;
+}
+button:hover{
+    border: 1px solid var(--backgounds);
+    background: var(--seconday);
+}
+    
+   
+.right{
+    overflow-y: auto;
+}
+
+/* About Styling */
+.about{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20PX;
+
+}
+.about .desc{
+    margin: 20px;
+    background-color: var(--white);
+    border-radius: 30px 0;
+    text-align: center;
+
+}
+.about .desc p{
+
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+
+}
+.about .desc button{
+    margin: 15px;
+
+}
+.about .desc h3{
+    margin: 15px;
+    text-align: center;
+    color: var(--main);
+
+}
+
+.skills{
+    margin: 40px;
+}
+ .progress{
+    margin-bottom: 10px;
+ }
+
+
+
+.skills h3{
+    color: var(--backgounds);
+    text-align: center;
+ }
+.progress-cont h4{
+    color: var(--white);
+    text-align: center;
+    text-align: left;
+ }
+
+ .services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 3%;
+    text-align: center;
+ }
+ .services .card{    
+    margin: 20px;
+ }
+ .services i{    
+    margin: 10px;
+    font-size: 70px;
+    color: var(--seconday);
+ }
+ .text{
+    color: var(--backgounds);
+    text-align: center;
+    margin: 70px 0 30px 0;
+ }
+
+ .card-5 h2{
+    color: var(--white);
+    font-size: 30px;
+ }
+.counters-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+    align-items: center;
+}
+ .card-5 {
+    background-color: var(--main);
+    border-radius: 10px 0;
+    padding: 20px;
+    text-align: center;
+ }
+ .card-5 h3 {
+    color: var(--white);
+    margin: 10px;
+ }
+ .card-5 i {
+    color: var(--backgounds);
+    font-size: 50px;
+ }
+ .card-5 h2 {
+    color: var(--seconday);
+ }
+
+ /* Portfolio */
+
+ .portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px;
+ }
+
+
+ .card-6{
+    margin-bottom: 30px;
+ }
+ .card-6 img{
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+    border: 2px groove var(--seconday);
+    border-radius: 10px;
+ }
+ .card-6 h3{
+    color: var(--white);
+ }
+ .card-6 h2{
+    color: var(--backgounds);
+ }
+
+ /* Contact styling */
+
+ .contact{
+    background-color: var(--seconday);
+    margin: 3%;
+    padding: 10px;
+ }
+
+ /* Contact styling */
+
+ .contacts{
+    margin: 3%;
+    background-color: var(--seconday);
+    border-radius: 20px 0;
+ }
+
+ form{
+    padding: 20px;
+ }
+
+ .form-group{
+    margin: 10px;
+ }
+ .form-group input, textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    
+ }
+ .form-group label {
+    font-size: 20px;
+    color: var(--cyan);
+    
+    
+    
+ }
+ 

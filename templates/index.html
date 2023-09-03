@@ -1,0 +1,271 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta subject="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="icon/image" href="{% static 'media/man.png' %}">
+    <script src="https://kit.fontawesome.com/54a9bcf716.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Nehemiah Wekesa - Portfolio</title>
+</head>
+<body>
+    <!-- Main Column Montain -->
+    <div class="main-container" >
+        <div class="columms">
+            <div class="left column">
+                
+<!-- The logo -->
+                <div class="logo">
+                    <h3>Per<span>sonal</span> Portfolio</h3>
+                </div>
+<!-- The navigation links -->
+
+                <div class="navlinks" class="item">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Porfolio</a></li>
+                        <li><a href="#contacts">Contact</a></li>
+                    </ul>
+                </div>
+<!-- The footer -->
+                <div class="footer">
+                    <h4>&copy 2023 || All Rights Reserverd</h4>
+                </div>
+            </div>
+
+<!-- Right column -->
+            <div class="right column">
+                <div class="avator" id="home">
+                    <div class="photo">
+                        <img src="{% static 'media/man.png' %}" alt="">
+
+                    </div>
+                    <div class="text-typing" class="item">
+                        <h2>My Name is Nehemiah Wekesa, and I am a <span id="typing"></span> </h2>
+                        
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-square-x-twitter"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                    <div class="hire">
+                        <button>Hire me</button>
+                    </div>
+                </div>
+<!-- About Section -->
+            <div class="about item" id="about" >
+                <div class="photo">
+                    <img src="{% static 'media/man.png' %}" alt="">
+                </div>
+
+                <div class="desc" class="item">
+
+                    <h3>About me</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Ratione odio quia eos
+                          reiciendis, veniam, est dignissimos dolor
+                           minus suscipit magni rem dolorum. 
+                        Labore iusto omnis excepturi cum quos. Cumque, id!
+                         adipisicing elit. Ratione odio quia eos
+                          reiciendis, veniam, est dignissimos dolor
+                           minus suscipit magni rem dolorum. 
+                        Labore iusto omnis excepturi cum quos. Cumque, id!
+                         adipisicing elit. Ratione odio quia eos
+                          reiciendis, veniam, est dignissimos dolor
+                           minus suscipit magni rem dolorum. 
+                        Labore iusto omnis excepturi cum quos. Cumque, id!
+                    </p>
+                        <button>Download CV</button>
+                </div>
+            </div>
+            <div class="skills" class="item">
+
+                <h3>The skills</h3>
+
+                <div class="progress-cont item">
+                <h4>HTML</h4>
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                 <div class="progress-bar bg-warning" style="width: 70%"> 100%</div>
+                  </div>
+                </div>
+
+                <div class="progress-cont">
+                <h4>CSS</h4>
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                 <div class="progress-bar bg-success" style="width: 90%"> 90%</div>
+                  </div>
+                </div>
+
+                <div class="progress-cont">
+                <h4>JavaScript</h4>
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                 <div class="progress-bar bg-warning" style="width: 80%"> 80%</div>
+                  </div>
+                </div>
+                <div class="progress-cont">
+                <h4>Django</h4>
+                <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                 <div class="progress-bar bg-danger" style="width: 60%"> 60%</div>
+                  </div>
+                </div>
+
+                </div>    
+            
+            <!-- Services -->
+            <h2 class="text item">My services</h2>
+            <div class="services item" id="services">
+                
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Tempora optio laudantium harum nisi.
+                          Consequuntur impedit dolores rerum cum beatae consectetur
+                           voluptas, consequatur eos 
+                        aliquid, id tempora in laborum voluptatibus nulla?
+                    </p>
+
+                        <button>Request quote</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-database"></i>
+                    <h3>Data Science</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Tempora optio laudantium harum nisi.
+                          Consequuntur impedit dolores rerum cum beatae consectetur
+                           voluptas, consequatur eos 
+                        aliquid, id tempora in laborum voluptatibus nulla?
+                    </p>
+
+                        <button>Request quote</button>
+                </div>
+                <div class="card">
+                    <i class="fa-brands fa-app-store"></i>
+                    <h3>App developmemt</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Tempora optio laudantium harum nisi.
+                          Consequuntur impedit dolores rerum cum beatae consectetur
+                           voluptas, consequatur eos 
+                        aliquid, id tempora in laborum voluptatibus nulla?
+                    </p>
+
+                        <button>Request quote</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Software Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Tempora optio laudantium harum nisi.
+                          Consequuntur impedit dolores rerum cum beatae consectetur
+                           voluptas, consequatur eos 
+                        aliquid, id tempora in laborum voluptatibus nulla?
+                    </p>
+
+                        <button>Request quote</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Cyber Security</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                         adipisicing elit. Tempora optio laudantium harum nisi.
+                          Consequuntur impedit dolores rerum cum beatae consectetur
+                           voluptas, consequatur eos 
+                        aliquid, id tempora in laborum voluptatibus nulla?
+                    </p>
+
+                        <button>Request quote</button>
+                </div>
+            </div>
+
+            <!-- Counters -->
+            <h2 class="text item">Numbers speaks</h2>
+            <div class="counters-container">
+                <div class="card-5">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Happy Clients</h3>
+                    <h2 id="happy"></h2>
+                </div>
+                <div class="card-5">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Projects Done</h3>
+                    <h2 id="projects"></h2>
+                </div>
+                <div class="card-5">
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>Cup of coffee</h3>
+                    <h2 id="cup"></h2>
+                </div>
+            </div>
+
+            <!-- Portfolio -->
+            <h2 class="text item">Portfolios</h2>
+            <div class="portfolio item" id="portfolio">
+                <div class="card-6">
+                    <h2>Web Development</h2>
+                    <img src="{% static 'media/soft.jpg' %}" alt="">
+                </div>
+                <div class="card-6">
+                    <h3>Software Developmet</h3>
+                    <img src="{% static 'media/web.jpg' %}" alt="">
+                </div>
+                <div class="card-6">
+                    <h3>Web Development</h3>
+                    <img src="{% static 'media/soft.jpg' %}" alt="">
+                </div>
+                <div class="card-6">
+                    <h2>Software Developmet</h2>
+                    <img src="{% static 'media/web.jpg' %}" alt="">
+                </div>
+            </div>
+
+            <!-- Contact form -->
+            <h2 class="text item">Contact us</h2>
+
+            <div class="contacts item" id="contacts" >
+                <form action="{% url 'contact' %}" method="post">
+                    {% csrf_token %}
+ 
+                    <div class="form-group">
+                        <label for="name">Enter the name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your fullname here.." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Enter the email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email here.." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Enter the subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="Enter your subject here.." required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Enter the message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message here.." required></textarea>
+                    </div>
+
+                    <button type="submit">Submit</button>
+
+                </form>
+            </div>
+
+           
+
+
+
+            </div>
+        </div>
+    </div>
+  <script src="{% static 'main.js' %}"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
